@@ -21,3 +21,8 @@
 .bg-hotpink {
   background-color: hotpink;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
