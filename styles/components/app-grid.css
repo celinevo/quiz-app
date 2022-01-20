@@ -1,8 +1,21 @@
 .app-grid {
   display: grid;
   grid-template-rows: 48px 1fr 48px;
+  height: 100vh;
 }
 
 .app-grid__scrollarea {
   overflow-y: auto;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.app-grid__header {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.app-grid__footer {
+  grid-column: 1/2;
+  grid-row: 3/4;
 }
