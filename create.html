@@ -7,8 +7,8 @@
     <title>Create</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <h1 id="create-heading">Create</h1>
+  <body class="app-grid">
+    <h1 class="app-grid__header">Create</h1>
 
     <main>
       <form aria-labelledby="create-heading" autocomplete="off">
@@ -38,30 +38,43 @@
       </form>
     </main>
 
-    <nav>
-      <ul role="list">
-        <li>
+    <nav class="app-grid__footer">
+      <ul role="list" class="flex footer__styling">
+        <li class="footer__button">
           <a href="./index.html"
             ><img
-              src="./Images/13439819131600005534-128.png"
+              src="../../Images/home-new-48x48.svg"
               alt=""
-              width="45px"
-              height="45px"
+              width="45"
+              height="45"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./bookmarks.html"
-            ><img src="./Images/bookmark.png" alt="" width="35" height="35"
+            ><img
+              src="../../Images/bookmerk-better-48x48.svg"
+              alt=""
+              width="35"
+              height="35"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./create.html"
-            ><img src="./Images/pen.png" alt="" width="40" height="40"
+            ><img
+              src="../../Images/write-new-48x48.svg"
+              alt=""
+              width="40"
+              height="40"
+              class="footer__icon--pressed"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./profile.html"
-            ><img src="./Images/profile.png" alt="" width="40" height="40"
+            ><img
+              src="../../Images/people-evenbetter-48x48.svg"
+              alt=""
+              width="40"
+              height="40"
           /></a>
         </li>
       </ul>

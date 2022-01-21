@@ -7,8 +7,8 @@
     <title>Profil</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <h1>Profile</h1>
+  <body class="app-grid">
+    <h1 class="app-grid__header">Profile</h1>
 
     <main>
       <figure>
@@ -28,7 +28,7 @@
         amet.
       </p>
       <h2>Your Skills</h2>
-      <ul role="list">
+      <ul role="list" class="card__tag">
         <li>Tag 1</li>
         <li>Tag 2</li>
         <li>Tag 3</li>
@@ -38,41 +38,42 @@
     </main>
 
     <nav class="app-grid__footer">
-      <ul role="list" class="flex">
-        <li>
+      <ul role="list" class="flex footer__styling">
+        <li class="footer__button">
           <a href="./index.html"
             ><img
-              src="./Images/home-new-48x48.svg"
+              src="../../Images/home-new-48x48.svg"
               alt=""
               width="45"
               height="45"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./bookmarks.html"
             ><img
-              src="./Images/bookmark-new-48x48.svg"
+              src="../../Images/bookmerk-better-48x48.svg"
               alt=""
               width="35"
               height="35"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./create.html"
             ><img
-              src="./Images/write-new-48x48.svg"
+              src="../../Images/write-new-48x48.svg"
               alt=""
               width="40"
               height="40"
           /></a>
         </li>
-        <li>
+        <li class="footer__button">
           <a href="./profile.html"
             ><img
-              src="./Images/profile-new-48x48.svg"
+              src="../../Images/people-evenbetter-48x48.svg"
               alt=""
               width="40"
               height="40"
+              class="footer__icon--pressed"
           /></a>
         </li>
       </ul>
