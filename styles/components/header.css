@@ -1,5 +1,5 @@
 h1 {
-  border-bottom: 3px solid rgb(196, 164, 60);
-  background-color: papayawhip;
+  border-bottom: 3px solid var(--color-gold);
+  background-color: var(--color-papayawhip);
   text-align: center;
 }

@@ -1,6 +1,6 @@
 .footer__styling {
-  border-top: 3px solid rgb(196, 164, 60);
-  background-color: papayawhip;
+  border-top: 3px solid var(--color-gold);
+  background-color: var(--color-papayawhip);
 }
 
 .footer__button {

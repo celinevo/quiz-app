@@ -3,17 +3,17 @@
   margin-top: 20px;
   padding: 5px;
   border: none;
-  background: rgb(206, 187, 125);
+  background: var(--color-lightgold);
   font-size: 105%;
 }
 
 .survey__textarea {
-  border: 2px solid rgb(196, 164, 60);
-  background: papayawhip;
+  border: 2px solid var(--color-gold);
+  background: var(--color-papayawhip);
   margin-top: 5px;
 }
 
 .survey__tags-field {
-  border: 2px solid rgb(196, 164, 60);
-  background: papayawhip;
+  border: 2px solid var(--color-gold);
+  background: var(--color-papayawhip);
 }
