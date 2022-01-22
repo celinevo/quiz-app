@@ -1,0 +1,46 @@
+.user__figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.user__image {
+  border: 5px solid var(--color-gold);
+  border-radius: 100%;
+}
+
+.user__name {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.user__description {
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.user__skill-headline {
+  margin: 20px;
+  margin-top: 40px;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.user__tag {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--color-wheat);
+  margin: 20px;
+}
+
+.user__logout {
+  margin: auto;
+  margin-top: 40px;
+  padding: 5px;
+  border: none;
+  background: var(--color-lightgold);
+  font-size: 105%;
+  display: flex;
+}

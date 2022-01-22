@@ -4,3 +4,7 @@
 
 @import "./components/app-grid.css";
 @import "./components/card.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/survey.css";
+@import "./components/user.css";

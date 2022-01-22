@@ -9,3 +9,10 @@
 ul[role="list"] {
   list-style: none;
 }
+
+form {
+  display: grid;
+  gap: 25px;
+  margin: 20px;
+  margin-top: 40px;
+}
