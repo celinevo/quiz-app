@@ -10,18 +10,6 @@
   height: 100vh;
 }
 
-.bg-blue {
-  background-color: skyblue;
-}
-
-.bg-coral {
-  background-color: coral;
-}
-
-.bg-hotpink {
-  background-color: hotpink;
-}
-
 .flex {
   display: flex;
   justify-content: space-around;
