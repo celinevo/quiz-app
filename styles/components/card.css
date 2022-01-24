@@ -1,6 +1,7 @@
 .card {
   padding: 20px;
   margin: 5%;
+  margin-top: 10%;
   border: 2px solid black;
   border-radius: 20px;
   background: papayawhip;
@@ -15,6 +16,16 @@
   position: absolute;
   top: -21px;
   right: 20px;
+  filter: invert(12%) sepia(90%) saturate(125%) hue-rotate(5deg) brightness(10%)
+    contrast(110%);
+}
+
+.card__bookmark--clicked {
+  position: absolute;
+  top: -21px;
+  right: 20px;
+  filter: invert(72%) sepia(990%) saturate(125%) hue-rotate(5deg)
+    brightness(70%) contrast(200%);
 }
 
 .card__bookmark:hover {
