@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../styles/index.css" />
+    <script defer src="../../basic.js"></script>
   </head>
   <body>
     <form aria-labelledby="create-heading" autocomplete="off">
       <label for="Question"
         >Add your Question:
+        <output class="survey__output" data-js="output">200</output>
         <textarea
           name=""
           id="question-field"
+          maxlength="200"
           cols="45"
           rows="10"
           required
           class="survey__textarea"
+          data-js="surveyTextarea"
         ></textarea>
       </label>
       <label for="Answer"
         >Add your Answer:
+        <output class="survey__output" data-js="output1">200</output>
         <textarea
           name=""
           id="answer-field"
+          maxlength="200"
           cols="45"
           rows="10"
           required
           class="survey__textarea"
+          data-js="surveyTextarea2"
         ></textarea>
       </label>
       <label for="tags-field">Add your Tags:</label>

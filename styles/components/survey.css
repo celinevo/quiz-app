@@ -7,6 +7,10 @@
   font-size: 105%;
 }
 
+.survey__output {
+  padding-left: 200px;
+}
+
 .survey__textarea {
   border: 2px solid var(--color-gold);
   background: var(--color-papayawhip);
