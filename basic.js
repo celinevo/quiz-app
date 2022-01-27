@@ -8,6 +8,21 @@ bookmarkElement?.addEventListener('click', () => {
 
 // Hide / Show Answer
 
+const showAnswerButton = document.querySelector(
+  '[data-js="card__show-answer-button"]'
+);
+
+const textHide = 'Hide Answer';
+const textShow = 'Show Answer';
+
+showAnswerButton?.addEventListener('click', () => {
+  if (showAnswerButton.textContent === textHide) {
+    showAnswerButton.textContent = textShow;
+  } else {
+    showAnswerButton.textContent = textHide;
+  }
+});
+
 // Survey Counter Question
 
 const outputElement = document.querySelector('[data-js="output"]');
