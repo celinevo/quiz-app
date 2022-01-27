@@ -1,7 +1,7 @@
-import html from "./survey.html";
+import html from './survey.html';
 
 export default {
-  title: "Components/survey",
+  title: 'Components/survey',
 };
 
 export const Default = () => html;
