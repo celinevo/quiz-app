@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <script type="module" defer src="index.js"></script>
   </head>
-  <body>
-    <main class="app-grid">
+  <body class="app-grid">
+    <main class="app-grid" data-js="homepage">
       <h1 class="app-grid__header">Quiz-App</h1>
       <section class="app-grid__scrollarea">
         <article class="card">
@@ -75,7 +75,7 @@
       </section>
     </main>
 
-    <main class="app-grid">
+    <main class="app-grid hidden" data-js="bookmarkpage">
       <h1 class="app-grid__header">Bookmarks</h1>
       <section class="app-grid__scrollarea">
         <article class="card">
@@ -138,7 +138,7 @@
       </section>
     </main>
 
-    <main class="app-grid">
+    <main class="app-grid hidden" data-js="createpage">
       <h1 class="app-grid__header">Create</h1>
       <section class="app-grid__scrollarea">
         <form aria-labelledby="create-heading" autocomplete="off">
@@ -180,7 +180,7 @@
       </section>
     </main>
 
-    <main class="app-grid">
+    <main class="app-grid hidden" data-js="profilpage">
       <h1 class="app-grid__header">Profile</h1>
       <section class="app-grid__scrollarea">
         <figure class="user__figure">
@@ -212,45 +212,45 @@
     </main>
 
     <nav class="app-grid__footer">
-      <ul role="list" class="flex footer__styling">
-        <li class="footer__button">
-          <a href="./index.html"
-            ><img
-              src="../../Images/home-new-48x48.svg"
-              alt=""
-              width="45"
-              height="45"
-              class="footer__icon--pressed"
-          /></a>
-        </li>
-        <li class="footer__button">
-          <a href="./bookmarks.html"
-            ><img
-              src="../../Images/bookmerk-better-48x48.svg"
-              alt=""
-              width="35"
-              height="35"
-          /></a>
-        </li>
-        <li class="footer__button">
-          <a href="./create.html"
-            ><img
-              src="../../Images/write-new-48x48.svg"
-              alt=""
-              width="40"
-              height="40"
-          /></a>
-        </li>
-        <li class="footer__button">
-          <a href="./profile.html"
-            ><img
-              src="../../Images/people-evenbetter-48x48.svg"
-              alt=""
-              width="40"
-              height="40"
-          /></a>
-        </li>
-      </ul>
+      <div class="flex footer__styling">
+        <button class="footer__button">
+          <img
+            src="../../Images/home-new-48x48.svg"
+            alt=""
+            width="45"
+            height="45"
+            data-js="home"
+            class="footer__button--active"
+          />
+        </button>
+        <button class="footer__button">
+          <img
+            src="../../Images/bookmerk-better-48x48.svg"
+            alt=""
+            width="35"
+            height="35"
+            data-js="bookmark"
+          />
+        </button>
+        <button class="footer__button">
+          <img
+            src="../../Images/write-new-48x48.svg"
+            alt=""
+            width="40"
+            height="40"
+            data-js="create"
+          />
+        </button>
+        <button class="footer__button">
+          <img
+            src="../../Images/people-evenbetter-48x48.svg"
+            alt=""
+            width="40"
+            height="40"
+            data-js="profil"
+          />
+        </button>
+      </div>
     </nav>
   </body>
 </html>
