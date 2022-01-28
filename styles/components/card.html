@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../../styles/index.css" />
+    <script type="module" defer src="../../index.js"></script>
   </head>
   <body>
     <article class="card">
       <h2 class="card__h2">Question:</h2>
       <button class="card__bookmark card__bookmark--style">
         <img
-          src="../../Images/bookmark-card-48x48.svg"
+
+          src="../../Images/bookmark-new-48x48.svg"
           alt=""
-          width="45px"
-          height="45px"
+          width="40px"
+          height="40px"
         />
       </button>
       <p>
@@ -26,7 +28,7 @@
         amet.
       </p>
       <details>
-        <summary>Show Answers</summary>
+        <summary data-js="card__show-answer-button">Show Answer</summary>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
       </details>
       <ul role="list" class="card__tag">
