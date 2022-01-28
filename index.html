@@ -8,70 +8,207 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <script type="module" defer src="index.js"></script>
   </head>
-  <body class="app-grid">
-    <h1 class="app-grid__header">Quiz-App</h1>
+  <body>
+    <main class="app-grid">
+      <h1 class="app-grid__header">Quiz-App</h1>
+      <section class="app-grid__scrollarea">
+        <article class="card">
+          <h2 class="card__h2">Question:</h2>
+          <button
+            class="card__bookmark card__bookmark--style card__bookmark--clicked"
+            data-js="bookmark-clicked"
+          >
+            <img
+              src="../../Images/bookmark-new-48x48.svg"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit ame.
+          </p>
+          <details>
+            <summary data-js="card__show-answer-button">Show Answers</summary>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          </details>
+          <ul role="list" class="card__tag">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
+        </article>
 
-    <main class="app-grid__scrollarea">
-      <article class="card">
-        <h2 class="card__h2">Question:</h2>
-        <button
-          class="card__bookmark card__bookmark--style card__bookmark--clicked"
-          data-js="bookmark-clicked"
-        >
-          <img
-            src="../../Images/bookmark-new-48x48.svg"
-            alt=""
-            width="40px"
-            height="40px"
-          />
-        </button>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit ame.
-        </p>
-        <details>
-          <summary data-js="card__show-answer-button">Show Answers</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        </details>
-        <ul role="list" class="card__tag">
-          <li>Tag 1</li>
-          <li>Tag 2</li>
-          <li>Tag 3</li>
-          <li>Tag 4</li>
-        </ul>
-      </article>
+        <article class="card">
+          <h2 class="card__h2">Question:</h2>
+          <button class="card__bookmark card__bookmark--style">
+            <img
+              src="../../Images/bookmark-new-48x48.svg"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
+          <details>
+            <summary>Show Answers</summary>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          </details>
+          <ul role="list" class="card__tag">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
+        </article>
+      </section>
+    </main>
 
-      <article class="card">
-        <h2 class="card__h2">Question:</h2>
-        <button class="card__bookmark card__bookmark--style">
-          <img
-            src="../../Images/bookmark-new-48x48.svg"
-            alt=""
-            width="40px"
-            height="40px"
+    <main class="app-grid">
+      <h1 class="app-grid__header">Bookmarks</h1>
+      <section class="app-grid__scrollarea">
+        <article class="card">
+          <h2 class="card__h2">Question:</h2>
+          <button class="card__bookmark--clicked card__bookmark--style">
+            <img
+              src="../../Images/bookmark-new-48x48.svg"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
+          <details>
+            <summary data-js="card__show-answer-button">Show Answers</summary>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          </details>
+          <ul role="list" class="card__tag">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__h2">Question:</h2>
+          <button class="card__bookmark--clicked card__bookmark--style">
+            <img
+              src="../../Images/bookmark-new-48x48.svg"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+          </button>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet.
+          </p>
+          <details>
+            <summary>Show Answers</summary>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+          </details>
+          <ul role="list" class="card__tag">
+            <li>Tag 1</li>
+            <li>Tag 2</li>
+            <li>Tag 3</li>
+            <li>Tag 4</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <main class="app-grid">
+      <h1 class="app-grid__header">Create</h1>
+      <section class="app-grid__scrollarea">
+        <form aria-labelledby="create-heading" autocomplete="off">
+          <label for="Question"
+            >Add your Question:
+            <output class="survey__output" data-js="output">200</output>
+            <textarea
+              name=""
+              id="question-field"
+              maxlength="200"
+              cols="45"
+              rows="10"
+              required
+              class="survey__textarea"
+              data-js="surveyTextarea"
+            ></textarea>
+          </label>
+          <label for="Answer"
+            >Add your Answer:
+            <textarea
+              name=""
+              id="answer-field"
+              maxlength="200"
+              cols="45"
+              rows="10"
+              required
+              class="survey__textarea"
+            ></textarea>
+          </label>
+          <label for="tags-field">Add your Tags:</label>
+          <input
+            type="text"
+            id="tags-field"
+            required
+            class="survey__tags-field"
           />
-        </button>
-        <p>
+          <button type="submit" class="survey__button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <main class="app-grid">
+      <h1 class="app-grid__header">Profile</h1>
+      <section class="app-grid__scrollarea">
+        <figure class="user__figure">
+          <img
+            src="https://source.unsplash.com/random/200x200"
+            alt=""
+            width="150"
+            height="150"
+            class="user__image"
+          />
+          <figcaption class="user__name">Profile Name</figcaption>
+        </figure>
+        <p class="user__description">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
         </p>
-        <details>
-          <summary>Show Answers</summary>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        </details>
-        <ul role="list" class="card__tag">
+        <h2 class="user__skill-headline">Your Skills:</h2>
+        <ul role="list" class="user__tag">
           <li>Tag 1</li>
           <li>Tag 2</li>
           <li>Tag 3</li>
           <li>Tag 4</li>
         </ul>
-      </article>
+        <button type="" class="user__logout">Logout</button>
+      </section>
     </main>
 
     <nav class="app-grid__footer">
