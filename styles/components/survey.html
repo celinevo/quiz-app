@@ -9,7 +9,7 @@
     <script type="module" defer src="../../index.js"></script>
   </head>
   <body>
-    <form aria-labelledby="create-heading" autocomplete="off">
+    <form aria-labelledby="create-heading" autocomplete="off" class="survey">
       <label for="Question"
         >Add your Question:
         <output class="survey__output" data-js="output">200</output>
@@ -17,8 +17,6 @@
           name=""
           id="question-field"
           maxlength="200"
-          cols="45"
-          rows="10"
           required
           class="survey__textarea"
           data-js="surveyTextarea"
@@ -30,8 +28,6 @@
           name=""
           id="answer-field"
           maxlength="200"
-          cols="45"
-          rows="10"
           required
           class="survey__textarea"
         ></textarea>

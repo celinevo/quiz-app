@@ -141,7 +141,11 @@
     <main class="app-grid hidden" data-js="createpage">
       <h1 class="app-grid__header">Create</h1>
       <section class="app-grid__scrollarea">
-        <form aria-labelledby="create-heading" autocomplete="off">
+        <form
+          aria-labelledby="create-heading"
+          autocomplete="off"
+          class="survey"
+        >
           <label for="Question"
             >Add your Question:
             <output class="survey__output" data-js="output">200</output>
@@ -149,8 +153,6 @@
               name=""
               id="question-field"
               maxlength="200"
-              cols="45"
-              rows="10"
               required
               class="survey__textarea"
               data-js="surveyTextarea"
@@ -162,8 +164,6 @@
               name=""
               id="answer-field"
               maxlength="200"
-              cols="45"
-              rows="10"
               required
               class="survey__textarea"
             ></textarea>
@@ -207,7 +207,9 @@
           <li>Tag 3</li>
           <li>Tag 4</li>
         </ul>
-        <button type="" class="user__logout">Logout</button>
+        <button type="" class="user__logout" data-js="user-logout">
+          Logout
+        </button>
       </section>
     </main>
 
