@@ -10,18 +10,20 @@
   </head>
   <body class="app-grid">
     <h1 class="app-grid__header">Create</h1>
-
     <main class="app-grid__scrollarea">
       <form aria-labelledby="create-heading" autocomplete="off">
         <label for="Question"
           >Add your Question:
+          <output class="survey__output" data-js="output">200</output>
           <textarea
             name=""
             id="question-field"
-            cols="40"
+            maxlength="200"
+            cols="45"
             rows="10"
             required
             class="survey__textarea"
+            data-js="surveyTextarea"
           ></textarea>
         </label>
         <label for="Answer"
@@ -29,7 +31,8 @@
           <textarea
             name=""
             id="answer-field"
-            cols="40"
+            maxlength="200"
+            cols="45"
             rows="10"
             required
             class="survey__textarea"
