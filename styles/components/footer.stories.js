@@ -1,7 +1,7 @@
-import html from "./footer.html";
+import html from './footer.html';
 
 export default {
-  title: "Components/footer",
+  title: 'Components/footer',
 };
 
 export const Default = () => html;
