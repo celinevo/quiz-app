@@ -14,7 +14,7 @@ export function logoutButton() {
     } else {
       logoutButton.textContent = 'Login';
       userProfil.classList.add('user-profil--hidden');
-      userLogoutText.classList.remove('user-logout-text--hidden');
+      alert('Already gone? Hope you come back soon!');
     }
   });
 }

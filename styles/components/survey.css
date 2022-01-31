@@ -15,7 +15,11 @@
 
 .survey__output {
   position: absolute;
-  left: 80%;
+  left: 85%;
+}
+
+.survey-label {
+  position: relative;
 }
 
 .survey__textarea {
@@ -25,7 +29,6 @@
   flex: 1;
   width: 100%;
   height: 150px;
-  position: relative;
 }
 
 .survey__tags-field {
