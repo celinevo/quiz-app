@@ -12,7 +12,7 @@
     <main class="app-grid" data-js="homepage">
       <h1 class="app-grid__header">Quiz-App</h1>
       <section class="app-grid__scrollarea">
-        <article class="card">
+        <article class="card" data-js="card">
           <h2 class="card__h2">Question:</h2>
           <button
             class="card__bookmark card__bookmark--style card__bookmark--clicked"
@@ -44,9 +44,12 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="card">
           <h2 class="card__h2">Question:</h2>
-          <button class="card__bookmark card__bookmark--style">
+          <button
+            class="card__bookmark card__bookmark--style card__bookmark--clicked"
+            data-js="bookmark-clicked"
+          >
             <img
               src="../../Images/bookmark-new-48x48.svg"
               alt=""
@@ -62,7 +65,7 @@
             Lorem ipsum dolor sit amet.
           </p>
           <details>
-            <summary>Show Answers</summary>
+            <summary data-js="card__show-answer-button">Show Answers</summary>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
           </details>
           <ul role="list" class="card__tag">
@@ -78,9 +81,12 @@
     <main class="app-grid hidden" data-js="bookmarkpage">
       <h1 class="app-grid__header">Bookmarks</h1>
       <section class="app-grid__scrollarea">
-        <article class="card">
+        <article class="card" data-js="card">
           <h2 class="card__h2">Question:</h2>
-          <button class="card__bookmark--clicked card__bookmark--style">
+          <button
+            class="card__bookmark card__bookmark--clicked card__bookmark--style"
+            data-js="bookmark-clicked"
+          >
             <img
               src="../../Images/bookmark-new-48x48.svg"
               alt=""
@@ -107,9 +113,12 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="card" data-js="card">
           <h2 class="card__h2">Question:</h2>
-          <button class="card__bookmark--clicked card__bookmark--style">
+          <button
+            class="card__bookmark card__bookmark--clicked card__bookmark--style"
+            data-js="bookmark-clicked"
+          >
             <img
               src="../../Images/bookmark-new-48x48.svg"
               alt=""
@@ -125,7 +134,7 @@
             Lorem ipsum dolor sit amet.
           </p>
           <details>
-            <summary>Show Answers</summary>
+            <summary data-js="card__show-answer-button">Show Answers</summary>
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
           </details>
           <ul role="list" class="card__tag">
