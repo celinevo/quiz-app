@@ -15,7 +15,7 @@ export function navbar() {
     });
   });
 
-  /*const buttonHome = document.querySelector('[data-nav="home"]');
+  const buttonHome = document.querySelector('[data-nav="home"]');
   const buttonBookmark = document.querySelector('[data-nav="bookmark"]');
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfil = document.querySelector('[data-nav="profil"]');
@@ -26,11 +26,6 @@ export function navbar() {
   const pageProfil = document.querySelector('[data-page="profil"]');
 
   buttonHome?.addEventListener('click', () => {
-    pageHome.classList.remove('hidden');
-    pageBookmark.classList.add('hidden');
-    pageCreate.classList.add('hidden');
-    pageProfil.classList.add('hidden');
-
     buttonHome.classList.add('footer__button--active');
     buttonBookmark.classList.remove('footer__button--active');
     buttonCreate.classList.remove('footer__button--active');
@@ -38,11 +33,6 @@ export function navbar() {
   });
 
   buttonBookmark?.addEventListener('click', () => {
-    pageBookmark.classList.remove('hidden');
-    pageHome.classList.add('hidden');
-    pageCreate.classList.add('hidden');
-    pageProfil.classList.add('hidden');
-
     buttonBookmark.classList.add('footer__button--active');
     buttonHome.classList.remove('footer__button--active');
     buttonCreate.classList.remove('footer__button--active');
@@ -50,11 +40,6 @@ export function navbar() {
   });
 
   buttonCreate?.addEventListener('click', () => {
-    pageCreate.classList.remove('hidden');
-    pageBookmark.classList.add('hidden');
-    pageHome.classList.add('hidden');
-    pageProfil.classList.add('hidden');
-
     buttonCreate.classList.add('footer__button--active');
     buttonBookmark.classList.remove('footer__button--active');
     buttonHome.classList.remove('footer__button--active');
@@ -62,15 +47,9 @@ export function navbar() {
   });
 
   buttonProfil?.addEventListener('click', () => {
-    pageProfil.classList.remove('hidden');
-    pageBookmark.classList.add('hidden');
-    pageCreate.classList.add('hidden');
-    pageHome.classList.add('hidden');
-
     buttonProfil.classList.add('footer__button--active');
     buttonBookmark.classList.remove('footer__button--active');
     buttonCreate.classList.remove('footer__button--active');
     buttonHome.classList.remove('footer__button--active');
   });
-  */
 }

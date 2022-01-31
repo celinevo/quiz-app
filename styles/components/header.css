@@ -1,5 +1,7 @@
-h1 {
+h1,
+h3 {
   border-bottom: 3px solid var(--color-gold);
   background-color: var(--color-papayawhip);
   text-align: center;
+  font-size: 200%;
 }
