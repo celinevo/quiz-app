@@ -1,13 +1,29 @@
 export function navbar() {
-  const buttonHome = document.querySelector('[data-js="home"]');
-  const buttonBookmark = document.querySelector('[data-js="bookmark"]');
-  const buttonCreate = document.querySelector('[data-js="create"]');
-  const buttonProfil = document.querySelector('[data-js="profil"]');
+  const allButtons = document.querySelectorAll('[data-nav]');
+  const allPages = document.querySelectorAll('[data-page]');
 
-  const pageHome = document.querySelector('[data-js="homepage"]');
-  const pageBookmark = document.querySelector('[data-js="bookmarkpage"]');
-  const pageCreate = document.querySelector('[data-js="createpage"]');
-  const pageProfil = document.querySelector('[data-js="profilpage"]');
+  allButtons.forEach(button => {
+    button.addEventListener('click', event => {
+      allPages.forEach(page => {
+        page.classList.add('hidden');
+      });
+      const buttonAttribute = event.currentTarget.getAttribute('data-nav');
+      const currentPage = document.querySelector(
+        `[data-page="${buttonAttribute}"]`
+      );
+      currentPage.classList.remove('hidden');
+    });
+  });
+
+  /*const buttonHome = document.querySelector('[data-nav="home"]');
+  const buttonBookmark = document.querySelector('[data-nav="bookmark"]');
+  const buttonCreate = document.querySelector('[data-nav="create"]');
+  const buttonProfil = document.querySelector('[data-nav="profil"]');
+
+  const pageHome = document.querySelector('[data-page="home"]');
+  const pageBookmark = document.querySelector('[data-page="bookmark"]');
+  const pageCreate = document.querySelector('[data-page="create"]');
+  const pageProfil = document.querySelector('[data-page="profil"]');
 
   buttonHome?.addEventListener('click', () => {
     pageHome.classList.remove('hidden');
@@ -56,4 +72,5 @@ export function navbar() {
     buttonCreate.classList.remove('footer__button--active');
     buttonHome.classList.remove('footer__button--active');
   });
+  */
 }

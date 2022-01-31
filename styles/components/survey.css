@@ -13,7 +13,17 @@
   font-size: 105%;
 }
 
-.survey__output {
+.survey__output--question {
+  position: absolute;
+  left: 85%;
+}
+
+.survey__output--answer {
+  position: absolute;
+  left: 85%;
+}
+
+.survey__output--tags {
   position: absolute;
   left: 85%;
 }
@@ -34,4 +44,5 @@
 .survey__tags-field {
   border: 2px solid var(--color-gold);
   background: var(--color-papayawhip);
+  margin-top: -20px;
 }

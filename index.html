@@ -9,7 +9,7 @@
     <script type="module" defer src="index.js"></script>
   </head>
   <body class="app-grid">
-    <main class="app-grid" data-js="homepage">
+    <main class="app-grid" data-page="home">
       <h1 class="app-grid__header">Quiz-App</h1>
       <section class="app-grid__scrollarea">
         <article class="card" data-js="card">
@@ -30,7 +30,7 @@
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit ame.
+            Lorem ipsum dolor sit amet.
           </p>
           <details>
             <summary data-js="card__show-answer-button">Show Answers</summary>
@@ -78,7 +78,7 @@
       </section>
     </main>
 
-    <main class="app-grid hidden" data-js="bookmarkpage">
+    <main class="app-grid hidden" data-page="bookmark">
       <h1 class="app-grid__header">Bookmarks</h1>
       <section class="app-grid__scrollarea">
         <article class="card" data-js="card">
@@ -147,7 +147,7 @@
       </section>
     </main>
 
-    <main class="app-grid hidden" data-js="createpage">
+    <main class="app-grid hidden" data-page="create">
       <h1 class="app-grid__header">Create</h1>
       <section class="app-grid__scrollarea">
         <form
@@ -155,9 +155,11 @@
           autocomplete="off"
           class="survey"
         >
-          <label for="Question" class="survey-label"
+          <label for="Question" class="survey-label" data-form="form"
             >Add your Question:
-            <output class="survey__output" data-js="output">200</output>
+            <output class="survey__output--question" data-js="output"
+              >200</output
+            >
             <textarea
               name=""
               id="question-field"
@@ -167,29 +169,37 @@
               data-js="surveyTextarea"
             ></textarea>
           </label>
-          <label for="Answer"
+          <label for="Answer" class="survey-label" data-form="form"
             >Add your Answer:
+            <output class="survey__output--answer" data-js="output">200</output>
             <textarea
               name=""
               id="answer-field"
               maxlength="200"
               required
               class="survey__textarea"
+              data-js="surveyTextarea"
             ></textarea>
           </label>
-          <label for="tags-field">Add your Tags:</label>
+          <label for="tags-field" class="survey-label" data-form="form"
+            >Add your Tags:
+            <output class="survey__output--tags" data-js="output-tags"
+              >100</output
+            >
+          </label>
           <input
             type="text"
             id="tags-field"
             required
             class="survey__tags-field"
+            data-js="surveyTags"
           />
           <button type="submit" class="survey__button">Submit</button>
         </form>
       </section>
     </main>
 
-    <main class="app-grid hidden" data-js="profilpage">
+    <main class="app-grid hidden" data-page="profil">
       <h1 class="app-grid__header">Profile</h1>
       <section class="app-grid__scrollarea">
         <div data-js="user-profil">
@@ -232,7 +242,7 @@
             alt=""
             width="45"
             height="45"
-            data-js="home"
+            data-nav="home"
             class="footer__button--active"
           />
         </button>
@@ -242,7 +252,7 @@
             alt=""
             width="35"
             height="35"
-            data-js="bookmark"
+            data-nav="bookmark"
           />
         </button>
         <button class="footer__button">
@@ -251,7 +261,7 @@
             alt=""
             width="40"
             height="40"
-            data-js="create"
+            data-nav="create"
           />
         </button>
         <button class="footer__button">
@@ -260,7 +270,7 @@
             alt=""
             width="40"
             height="40"
-            data-js="profil"
+            data-nav="profil"
           />
         </button>
       </div>

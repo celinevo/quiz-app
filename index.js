@@ -1,10 +1,13 @@
 import Card from './js/Card.js';
+import Form from './js/Form.js';
 
-//import { bookmarks } from './js/bookmarks.js';
-//import { questionButtons } from './js/questionButtons.js';
-import { surveyTextfields } from './js/surveyTextfields.js';
 import { navbar } from './js/navbar.js';
 import { logoutButton } from './js/logoutButton.js';
+import { surveyTags } from './js/surveyTags.js';
+
+navbar();
+logoutButton();
+surveyTags();
 
 const allCardElements = document.querySelectorAll('[data-js="card"]');
 
@@ -12,8 +15,8 @@ allCardElements.forEach(cardElement => {
   Card(cardElement);
 });
 
-//bookmarks();
-//questionButtons();
-surveyTextfields();
-navbar();
-logoutButton();
+const allFormElements = document.querySelectorAll('[data-form="form"]');
+
+allFormElements.forEach(formElement => {
+  Form(formElement);
+});
