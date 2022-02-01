@@ -7,9 +7,11 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  background: none;
+  border: none;
 }
 
-.footer__icon--pressed {
+.footer__button--active {
   filter: invert(42%) sepia(70%) saturate(135%) hue-rotate(87deg)
     brightness(80%) contrast(20%);
 }

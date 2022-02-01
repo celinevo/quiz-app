@@ -1,3 +1,9 @@
+.survey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .survey__button {
   margin: auto;
   margin-top: 20px;
@@ -7,17 +13,36 @@
   font-size: 105%;
 }
 
-.survey__output {
-  padding-left: 200px;
+.survey__output--question {
+  position: absolute;
+  left: 85%;
+}
+
+.survey__output--answer {
+  position: absolute;
+  left: 85%;
+}
+
+.survey__output--tags {
+  position: absolute;
+  left: 85%;
+}
+
+.survey-label {
+  position: relative;
 }
 
 .survey__textarea {
   border: 2px solid var(--color-gold);
   background: var(--color-papayawhip);
   margin-top: 5px;
+  flex: 1;
+  width: 100%;
+  height: 150px;
 }
 
 .survey__tags-field {
   border: 2px solid var(--color-gold);
   background: var(--color-papayawhip);
+  margin-top: -20px;
 }
