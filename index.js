@@ -1,5 +1,5 @@
-import Card from './js/Card.js';
-import Form from './js/Form.js';
+import Card from './components/Card.js';
+import Form from './components/Form.js';
 
 import { navbar } from './js/navbar.js';
 import { logoutButton } from './js/logoutButton.js';
